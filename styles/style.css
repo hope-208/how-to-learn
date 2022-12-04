@@ -7,25 +7,433 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+ /* height: 100%;
+  width: 100%;*/
 }
 
 .header {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
   height: 100vh;
   min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
+  max-height: 756px; /* выше установили ограничения для секции */
+  /*padding-left: 64px;*/
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border: 1px solid red;
+  justify-content: space-evenly;
 }
+
+.header__title {
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  position: absolute;
+  left: 64px;
+  z-index: 1;
+}
+
+.header__subtitle {
+  border: 1px solid red;
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  /*order: 1;*/
+}
+
+.header__main-illustration {
+  border: 1px solid red;
+  max-width: 608px;
+  max-height: 765px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.header__main-illustration-size {
+  height: auto;
+  z-index: 1;
+}
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  border: 1px solid red;
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: 0;
+}
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.logo {
+  border: 1px solid red;
+  display: flex;
+  width: 228px;
+  height: 32px;
+  /*order: 1;*/
+}
+
+.logo_place_header {
+  border: 1px solid red;
+  background-image: url(/Users/Ласточка/how-to-learn/images/logo_place_header.svg);
+  position: absolute;
+    left: 64px;
+    top: 30px;
+  order: 1;
+}
+
+.description {
+  display: flex;
+  border: 1px solid red;
+}
+
+.two-columns {
+  border: 1px solid red;
+  display: flex;
+  margin: 100px auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.main-text {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 80%;
+  min-width: 764px;
+}
+
+.two-columns__brief {
+  border: 1px solid red;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;    
+  margin: 0;
+  padding-bottom: 30px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 80%;
+  min-width: 764px;
+}
+
+.two-columns__paragraph:last-of-type {
+  padding-bottom: 0;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.digits {
+  display: flex;
+  margin: 100px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-subtitle {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.table {
+  border: 1px solid red;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 1100px;
+}
+
+.table__cell {
+  border: 1px solid red;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 250px;
+}
+
+.table__heading {
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feynman {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border: 1px solid red;
+  background-image: url(/Users/Ласточка/how-to-learn/images/feynman.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  position: relative;
+  height: 890px;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.feynman__title {
+  display: flex;
+  border: 1px solid red;
+  align-self: center;
+  box-sizing: border-box;
+  text-align: center;
+  width: 648px;
+  padding-top: 100px;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feynman__subtitle {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 70px;
+  margin: 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  border: 1px solid red;
+  display: flex;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  color: #2f80ed;
+  text-decoration: none;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.kaufman {
+  background-color: black;
+  border: 1px solid red;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 90px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.table__cell_theme-dark {
+  border: 1px solid red;
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  padding-top: 80px;
+}
+
+.table__cell_theme-dark:nth-of-type(6n) {
+  padding-top: 0;
+  margin: 0;
+}
+
+.theme-dark {
+  color: white;
+  z-index: 2;
+}
+
+.kaufman__triangle {
+  border: 1px solid red;
+  display: flex;
+  position: absolute;
+  right: -200px;
+  top: 0;
+  z-index: 1;
+  width: 877px;
+  height: 877px;
+}
+
+.footer {
+  background-color: black;
+  border: 1px solid red;
+  color: white;
+  min-width: 350px;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__column_content-copyright {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-basis: 711px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo_place_footer {
+  border: 1px solid red;
+  background-image: url(/Users/Ласточка/how-to-learn/images/logo_place_footer.svg);
+  width: 228px;
+  height: 32px;
+  justify-self: start;
+  align-self: flex-start;
+  z-index: 3;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__author {
+  border: 1px solid red;
+  padding: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__column_content-info {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__column-heading {
+  border: 1px solid red;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__column-links {
+  border: 1px solid red;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;  
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__column_content-social {
+  border: 1px solid red;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__social-icon {
+  border: 1px solid red;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__column-link {
+  border: 1px solid red;
+  text-decoration: none;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
 }
