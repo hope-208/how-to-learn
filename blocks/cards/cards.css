@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 920px;
+  box-sizing: border-box;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  z-index: 2;
+}

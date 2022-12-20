@@ -1,0 +1,7 @@
+.footer__social-icon {
+  display: flex;
+  height: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  padding-right: 10px;
+}

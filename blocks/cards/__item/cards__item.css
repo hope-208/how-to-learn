@@ -1,0 +1,10 @@
+.card__item {
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 240px;
+  list-style-type: none;
+  z-index: 2;
+}

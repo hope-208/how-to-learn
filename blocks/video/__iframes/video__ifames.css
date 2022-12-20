@@ -1,0 +1,10 @@
+.video__ifames {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 316px;
+  width: 80%;
+  padding-top: 50px;
+}

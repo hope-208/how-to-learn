@@ -1,0 +1,11 @@
+.table__cell {
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 250px;
+  list-style-type: none;
+  z-index: 2;
+}
