@@ -1,6 +1,5 @@
 .cards__description {
   display: flex;
-  width: 239px;
   box-sizing: border-box;
   align-items: flex-start;
   flex-direction: row;
