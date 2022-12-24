@@ -1,6 +1,7 @@
 .cards__title {
-  justify-content: flex-start;
+  width: 239px;
   box-sizing: border-box;
+  text-align: center;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;

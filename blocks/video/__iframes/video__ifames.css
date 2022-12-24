@@ -1,10 +1,8 @@
-.video__ifames {
+.video__iframes {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
-  flex-direction: row;
-  box-sizing: border-box;
   height: 316px;
-  width: 80%;
+  max-width: 1050px;
   padding-top: 50px;
+  overflow: hidden;
 }

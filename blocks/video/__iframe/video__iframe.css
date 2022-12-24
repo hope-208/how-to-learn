@@ -1,6 +1,12 @@
 .video__iframe {
   display: flex;
-  border: 0;
+  width: 515px;
+  height: 316px;
+  border: none;
   justify-content: space-between;
   overflow: visible;
+}
+
+.video__iframe:first-of-type {
+  padding-right: 20px;
 }
