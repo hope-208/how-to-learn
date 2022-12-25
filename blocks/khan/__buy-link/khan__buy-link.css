@@ -2,9 +2,10 @@
   display: flex;
   margin: 0;
   padding: 0;
+  max-height: 42px;
   text-decoration: none;
   color: #2f80ed;
-  padding-left: 46px;
+  margin-left: 46px;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;

@@ -1,5 +1,10 @@
 .logo {
   display: flex;
+  box-sizing: border-box;
+  justify-self: start;
+  align-self: flex-start;
   width: 228px;
   height: 32px;
+  margin: 0;
+  z-index: 3;
 }

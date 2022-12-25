@@ -6,6 +6,5 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 250px;
-  list-style-type: none;
   z-index: 2;
 }
